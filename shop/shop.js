@@ -13,7 +13,9 @@ function render(item) {
     //newElement.className = "content"
     newElement.innerHTML = `
         <div class="item-card">
-            <a href="product/${item.vendor}/${item.description_page}.html"><img src="${item.image_url}" id="shop_image"></a>
+            <a href="product/${item.vendor}/${item.description_page}.html">
+                <img src="../img/product/${item.vendor}/${item.description_page}.webp" id="shop_image">
+            </a>
             <h2>${item.name}</h2>
             <div>
             <p>Price: $${item.price}</p>

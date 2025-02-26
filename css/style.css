@@ -237,6 +237,9 @@ footer li:first-child {
     margin-left: 10px;
 }
 
+#price {
+    padding-bottom: 20px;
+}
 .prologue {
     background-color: #000000;
     color: #FFFFFF;
@@ -244,7 +247,7 @@ footer li:first-child {
 }
 
 .service {
-    background-color: #000000;
+    background-color: #D4AF37 ;
     color: #FFFFFF;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -280,7 +283,7 @@ footer li:first-child {
 .service_service > ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    gap: 80px;
     padding: 30px;
 }
 
@@ -361,6 +364,7 @@ footer li:first-child {
 .review {
     background-color: #E5E9EA;
     padding-top: 20px;
+    padding-bottom: 40px;
 }
 
 .review > h2 {
