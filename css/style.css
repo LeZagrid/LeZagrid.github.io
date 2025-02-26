@@ -230,7 +230,7 @@ footer li:first-child {
 }
 
 .nav_header > div > ul > li > a {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .nav_header :first-child {
@@ -451,6 +451,7 @@ footer li:first-child {
 }
 
 .working_man > div > h2 {
+    font-size: 40px;
     padding-top: 20px;
     margin-bottom: 20px;
 }
