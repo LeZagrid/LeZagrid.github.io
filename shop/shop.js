@@ -18,6 +18,7 @@ function render(item) {
             <div>
             <p>Price: $${item.price}</p>
             <br/>
+            <button class="add_item">
     <svg height="20px" width="20px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
 	 viewBox="0 0 26 26" xml:space="preserve">
         <g>
@@ -33,9 +34,8 @@ function render(item) {
 		c-0.097,0.182-0.086,0.403,0.028,0.574C11.816,9.605,14.564,12.265,14.663,12.344z"/>
         </g>
     </svg>   
+    </button>
             </div>
-                <button class="add_item">Add
-                </button>
         </div>
     `
     div.append(newElement)
