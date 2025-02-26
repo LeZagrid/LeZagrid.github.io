@@ -18,6 +18,14 @@ a {
     text-decoration: none;
 }
 
+.about > h2 {
+    padding: 20px;
+}
+
+.about > div > h2 {
+    padding: 10px;
+}
+
 .account {
     display: flex;
 
@@ -98,6 +106,7 @@ a {
     display: flex;
     height: 40px;
     overflow: hidden;
+    width: 80%;
 }
 
 .contact_left > form > button {
@@ -363,7 +372,7 @@ footer li:first-child {
     vertical-align: center;
 }
 
-.shop_single :last-child{
+.shop_single :last-child {
     padding-bottom: 10px;
 }
 
@@ -375,6 +384,7 @@ footer li:first-child {
     display: flex;
     flex-direction: column;
     padding: 10px;
+    padding-top: 20px;
 }
 
 .shop_single_action > button {
@@ -386,7 +396,17 @@ footer li:first-child {
     padding-right: 5px;    
     padding-bottom: 10px;
     padding-top: 10px;
-    width: 30%;
+    width: 20%;
+}
+
+.shop_single_action > button:hover {
+    background-color: #FFFFFF;
+    color:#2D2B2BD1;
+    cursor: pointer;
+}
+
+.sku_div {
+    display: inline;
 }
 
 .wash_bay_price > h2, .wash_bay_price > h3 {

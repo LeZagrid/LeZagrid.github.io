@@ -13,7 +13,7 @@ function render(item) {
     //newElement.className = "content"
     newElement.innerHTML = `
         <div class="item-card">
-            <a><img src="${item.image_url}" id="shop_image"></a>
+            <a href="product/${item.vendor}/${item.description_page}.html"><img src="${item.image_url}" id="shop_image"></a>
             <h2>${item.name}</h2>
             <div>
             <p>Price: $${item.price}</p>
@@ -57,13 +57,34 @@ function cart_add(item) {
             cart.push(item)
         }
      }
+     localStorage.setItem("cart_cache", JSON.stringify(cart))
      console.log("Cart", cart)
+     console.log("Cache", JSON.parse(localStorage.getItem("cart_cache")))
+     quantity()
 }
 
-fetch("https://api.jsonbin.io/v3/qs/67be6f19ad19ca34f8123735")
+function cart_quantity() {
+    let quantity = JSON.parse(localStorage.getItem("cart_quantity"))
+    console.log("_quantity", quantity)
+    if (!quantity) quantity = 0
+    let quantity_button = document.getElementById("shop_quantity")
+    quantity_button.innerText = quantity
+}
+
+function quantity() {
+    let quantity = 0;
+    const _cart = JSON.parse(localStorage.getItem("cart_cache")) 
+    _cart.forEach(item => quantity += item.quantity)
+    console.log("quantity", quantity)
+    localStorage.setItem("cart_quantity", quantity)
+    cart_quantity()
+}
+
+fetch("https://api.jsonbin.io/v3/qs/67bf5ecde41b4d34e49d3c36 ")
   .then((response) => response.json())
   .then((data) => {
     renderAll(data.record)
-
   })
   .catch((error) => console.error("Error loading JSON file", error));
+
+  cart_quantity()
