@@ -82,7 +82,7 @@ function quantity() {
     cart_quantity()
 }
 
-fetch("https://api.jsonbin.io/v3/qs/67bf5ecde41b4d34e49d3c36 ")
+fetch("https://api.jsonbin.io/v3/qs/67bf5ecde41b4d34e49d3c36")
   .then((response) => response.json())
   .then((data) => {
     renderAll(data.record)
