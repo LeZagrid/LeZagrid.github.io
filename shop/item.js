@@ -1,6 +1,15 @@
+const json_bin = "https://api.jsonbin.io/v3/qs/67bf5ecde41b4d34e49d3c36"
+
 let cart = JSON.parse(localStorage.getItem("cart_cache"))
 
 const sku = document.getElementById("sku").innerText.replace(/\D/g,'');
+
+const data = fetch(json_bin).then(res => res.json())
+
+console.log("data", data)
+
+function item() {
+}
 
 function cart_add_sku() {
     console.log(sku)
