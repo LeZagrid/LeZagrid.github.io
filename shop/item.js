@@ -7,7 +7,7 @@ function cart_add_sku() {
     if (cart.length == 0) 
         cart.push(item)
     else { 
-        let exist = cart.filter(_item => item.id == _item.id)
+        let exist = cart.filter(_item => sku == _item.sku)
         if (exist.length != 0) {
             cart.find(_item =>  _item.quantity += 1)
         } else {
