@@ -161,6 +161,10 @@ footer li:first-child {
     text-decoration: underline;
 }
 
+footer li {
+    line-height: 2.0;
+}
+
 .img_front {
     position: relative;
     display: inline-block;
@@ -247,7 +251,7 @@ footer li:first-child {
 }
 
 .service {
-    background-color: #D4AF37 ;
+    background-color: #444748 ;
     color: #FFFFFF;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
