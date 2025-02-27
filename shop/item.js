@@ -7,11 +7,11 @@ const sku = document.getElementById("sku").innerText.replace(/\D/g,'');
 let dta = null
 
 fetch("https://api.jsonbin.io/v3/qs/67bf5ecde41b4d34e49d3c36")
-  .then(res => response.json())
+  .then(res => res.json())
   .then(dta => data(dta))
 
 function data(dta) {
-    console.log(dta)
+    console.log("dta", dta)
 }
 
 
