@@ -219,6 +219,7 @@ footer li {
     grid-template-columns: 25% 50% 25%;
     justify-items: center;
     margin-top: 10px;
+
 }
 
 .nav_header > div > ul {
@@ -231,6 +232,7 @@ footer li {
     font-size: 20px;
     font-weight: 500;
     padding: 10px;
+
 }
 
 .nav_header > div > ul > li > a {
@@ -243,7 +245,7 @@ footer li {
 
 #nav_link_service {
     border-right: 1px solid #000000;
-    padding-right: 22px;
+    padding-right: 25px;
 }
 
 #nav_ul {
@@ -315,7 +317,6 @@ footer li {
     justify-items: center;
     align-content: space-evenly;
     align-items: center;
-    text-align: center;    
 }
     
 .service h2:first-child {
