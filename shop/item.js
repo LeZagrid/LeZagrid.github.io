@@ -4,7 +4,7 @@ let cart = JSON.parse(localStorage.getItem("cart_cache"))
 
 const sku = document.getElementById("sku").innerText.replace(/\D/g,'');
 
-const data = fetch(json_bin).then(res => res.json())
+const data = fetch(json_bin).then(res => res.json().record)
 
 console.log("data", data)
 
