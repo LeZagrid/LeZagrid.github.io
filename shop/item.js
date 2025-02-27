@@ -4,9 +4,16 @@ let cart = JSON.parse(localStorage.getItem("cart_cache"))
 
 const sku = document.getElementById("sku").innerText.replace(/\D/g,'');
 
-const data = fetch(json_bin).then(res => res.json().record)
+let dta = null
 
-console.log("data", data)
+fetch("https://api.jsonbin.io/v3/qs/67bf5ecde41b4d34e49d3c36")
+  .then(res => response.json())
+  .then(dta => data(dta))
+
+function data(dta) {
+    console.log(dta)
+}
+
 
 function item(sku) {
     data.forEach(_item => console.log(_item))
