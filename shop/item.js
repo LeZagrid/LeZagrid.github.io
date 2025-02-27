@@ -8,7 +8,8 @@ const data = fetch(json_bin).then(res => res.json())
 
 console.log("data", data)
 
-function item() {
+function item(sku) {
+    data.forEach(_item => console.log(_item))
 }
 
 function cart_add_sku() {
