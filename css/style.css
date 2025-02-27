@@ -241,13 +241,65 @@ footer li {
     margin-left: 10px;
 }
 
+#nav_link_service {
+    border-right: 1px solid #000000;
+    padding-right: 22px;
+}
+
+#nav_ul {
+    display: flex;
+}
+
 #price {
     padding-bottom: 20px;
 }
+
 .prologue {
     background-color: #000000;
     color: #FFFFFF;
     padding: 14px;
+}
+
+
+.review {
+    background-color: #E5E9EA;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.review > h2 {
+    font-size: 26px;
+    padding-bottom: 20px;
+}
+
+.review > ul {
+    align-items: center;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-evenly;
+}
+
+.review > ul > li {
+    align-content: space-evenly;
+    align-items: center;
+    border: 0px solid #000000;
+    border-right: 1px solid #000000;
+    font-size: 16px;
+    line-height: 2;
+    height: 100%;
+    justify-items: center;
+    padding: 20px;
+    text-align: center;
+    vertical-align: center;
+}
+
+.review > li:last-child {
+    border-right: 0px;
+}
+
+#review_final {
+    border-right: 0px;
 }
 
 .service {
@@ -282,6 +334,14 @@ footer li {
     grid-template-rows: repeat(1, 1fr);
     padding-bottom: 40px;
     padding-top: 40px;
+}
+
+.service > h2 {
+    font-size: 26px;
+}
+
+.service {
+    background-image: url("https://static.wixstatic.com/media/7c13df_02c60bba2dd5415f8d31f86fb8bb3d31~mv2.png/v1/fill/w_1064,h_814,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/7c13df_02c60bba2dd5415f8d31f86fb8bb3d31~mv2.png")
 }
 
 .service_service > ul {
@@ -363,37 +423,6 @@ footer li {
     font-size: 7px;
     height: 10px;
     width: 10px;
-}
-
-.review {
-    background-color: #E5E9EA;
-    padding-top: 20px;
-    padding-bottom: 40px;
-}
-
-.review > h2 {
-    padding-bottom: 20px;
-}
-
-.review > ul {
-    align-items: center;
-    display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: space-evenly;
-}
-
-.review > ul > li {
-    align-content: space-evenly;
-    align-items: center;
-    border: 1px solid #000000;
-    font-size: 16px;
-    line-height: 2;
-    height: 100%;
-    justify-items: center;
-    padding: 20px;
-    text-align: center;
-    vertical-align: center;
 }
 
 .shop_single :last-child {
