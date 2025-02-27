@@ -1,7 +1,5 @@
 let cart = JSON.parse(localStorage.getItem("cart_cache"))
 
-if (!cart) cart = [];
-
 const sku = document.getElementById("sku").innerText.replace(/\D/g,'');
 
 function cart_add_sku() {
@@ -16,6 +14,14 @@ function cart_add_sku() {
             cart.push(item)
         }
      }
+}
+
+function cart_quantity() {
+    let quantity = JSON.parse(localStorage.getItem("cart_quantity"))
+    console.log("_quantity", quantity)
+    if (!quantity) quantity = 0
+    let quantity_button = document.getElementById("shop_quantity")
+    quantity_button.innerText = quantity
 }
 
 function quantity() {
